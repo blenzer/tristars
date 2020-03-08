@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BillingTerm</fullName>
+    <inlineHelpText>Anzahl der Abrechnungseinheiten, auf die dieser Verbrauchsplan angewendet wird. Wenn die ausgewählte Abrechnungsintervalleinheit beispielsweise &quot;Monat&quot; lautet, geben Sie &quot;12&quot; ein, damit die Verbrauchspläne für 12 Monate angewendet wird. Wenden Sie Verbrauchspläne auf 20 Quartale, 60 Monate oder 5 Jahre an.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

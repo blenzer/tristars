@@ -1,0 +1,55 @@
+<apex:page controller="CTRL_Report">
+<!--apex:page controller="CTRL_Report" renderas="pdf"-->
+<!--apex:page controller="CTRL_Report" contentType="application/vnd.ms-excel#SalesForceExport.xls"-->
+    <head>
+        <style type="text/css">
+            td
+            {
+                padding:0 15px;
+            }
+            .paddingBetweenCols
+            {
+                padding:0 15px;
+            }
+        </style>
+    </head>
+
+    <apex:form >
+        
+        <apex:repeat value="{!lTN}" var="TN">
+            <apex:pageblock tabstyle="Reise__c">
+                <apex:pageblocktable value="{!TN}" var="oTN">
+                    <apex:column value="{!oTN.Name}"/>
+                    <apex:column value="{!oTN.Anzahlungsbetrag__c}"/>
+                    <apex:column value="{!oTN.Istkosten_Gesamt__c}"/>
+                    <apex:column value="{!oTN.Zahlungen_Gesamt__c}"/>
+                    <apex:column value="{!oTN.Vorschuss_gesamt__c}"/>
+                    <apex:column value="{!oTN.Saldo__c}"/>
+                </apex:pageblocktable> 
+                <br/>
+                <table width="100%" padding="5px">
+                    <tr valign="top">
+                        <td width="50%">
+                            <a style="font-weight:bold;font-size=x-large">Kosten</a><br/>
+                            <apex:pageblocktable value="{!mCost[TN.Id]}" var="Cost">
+                                <apex:column value="{!Cost.Organisationspunkt__r.Name}"/>
+                                <apex:column value="{!Cost.Istkosten_Gesamt__c}"/>
+                            </apex:pageblocktable> 
+                            <br/>
+                        </td>
+                        <td width="50%">                        
+                            <a style="font-weight:bold;font-size=x-large">Zahlungen</a><br/>
+                            <apex:pageblocktable value="{!mPay[TN.Id]}" var="Pay">
+                                <apex:column value="{!Pay.Organisationspunkt__r.Name}"/>
+                                <apex:column value="{!Pay.Zahlbetrag__c}"/>
+                                <apex:column value="{!Pay.Vorschuss__c}"/>
+                            </apex:pageblocktable>                            
+                         </td>
+                     </tr>
+                 </table> 
+             </apex:pageblock>   
+        </apex:repeat> 
+         
+    </apex:form>
+  
+</apex:page>

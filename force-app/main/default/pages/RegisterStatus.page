@@ -1,0 +1,30 @@
+<apex:page controller="CTRL_Site">
+
+    <apex:form >
+       
+        <apex:actionfunction name="refresh" action="{!refresh}" rerender="TN"/>
+        
+        <apex:outputlink style="font-weight:bold;font-size:large;" target="_blank" value="https://tristars-dev-ed.my.salesforce.com/sfc/p/2p000000USee/a/2p000000oQpP/wBPRfM7qqxzZnPsuCGNNZUrKQjDPYRnh171GkoVXDhY">Download Touren</apex:outputlink>
+        <br/><br/>
+        <apex:outputlink style="font-weight:bold;font-size:large;" target="_blank" value="https://tristars-dev-ed.my.salesforce.com/sfc/p/2p000000USee/a/2p000000kLEd/BivZAXGVA55S02xleWKybKRVeJeiryohRq.jfIBjM0Y">Download Touren für müde Beine</apex:outputlink>
+        <br/><br/>
+
+        <apex:pageblock tabstyle="Reise__c" Title="{!oReise.Name} {!oReise.Start__c} - {!oReise.Ende__c} : Teilnehmerliste">
+            <apex:pageblockbuttons location="top">
+                <apex:outputtext value="Filter nach Status: "/>
+                <apex:selectList value="{!sFilter}" size="1" onchange="refresh();">
+                    <apex:selectoptions value="{!lSO}"/>
+                </apex:selectlist>
+            </apex:pageblockbuttons>
+            <apex:pageblocktable value="{!Teilnehmer}" var="TN" id="TN">
+                <apex:column value="{!TN.Name}"/>
+                <apex:column value="{!TN.Status__c}"/>
+            </apex:pageblocktable>   
+            <br/>
+            <apex:outputtext style="font-weight:bold;font-size:large;" value="Bei Interesse / Änderungswünchen bitte bei Sylvio Gorecki (sylviog@web.de) melden"/> 
+        </apex:pageblock>    
+    </apex:form>
+    <br/>
+    <apex:outputlink target="_self" value="https://tristars-dev-ed--c.visualforce.com/apex/RegisterStatus">Link</apex:outputlink>
+  
+</apex:page>

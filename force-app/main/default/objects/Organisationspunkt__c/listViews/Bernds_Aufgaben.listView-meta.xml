@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bernds_Aufgaben</fullName>
+    <columns>NAME</columns>
+    <columns>Typ__c</columns>
+    <columns>Anbieter__c</columns>
+    <columns>Plankosten__c</columns>
+    <columns>Istkosten__c</columns>
+    <columns>Bemerkung__c</columns>
+    <columns>Buchungsdatum__c</columns>
+    <columns>Referenz__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Organisator__c</field>
+        <operation>contains</operation>
+        <value>Lenzer</value>
+    </filters>
+    <label>Bernd&#39;s Aufgaben</label>
+</ListView>

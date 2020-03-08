@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price</fullName>
+    <inlineHelpText>Der Preis für die Nutzung, die in den Bereich dieses Verbrauchswerts fällt.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

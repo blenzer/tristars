@@ -1,0 +1,40 @@
+<apex:page standardcontroller="Zahlung__c" recordsetvar="selected" extensions="CTRL_Email" sidebar="false" docType="html-5.0"> 
+    <!--apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"/-->
+    <apex:includeScript value="//cdn.ckeditor.com/4.5.3/standard/ckeditor.js" /> 
+    <apex:includeScript value="/support/console/26.0/integration.js"/>
+
+    <apex:form id="theForm">
+        <apex:pageblock >
+            <apex:pageblockbuttons location="both">
+                <apex:commandbutton value="Senden" action="{!composeEmail}" oncomplete="window.top.location.href='{!sRetURL}';"/>
+                <apex:commandbutton value="Abbrechen" action="{!doCancel}" oncomplete="window.top.location.href='{!sRetURL}';"/>
+            </apex:pageblockbuttons>
+            <apex:pageblocksection columns="1">
+                <apex:pageblocksectionitem >
+                    <apex:outputlabel value="Absender" for="from"/>
+                    <apex:outputtext value="{!emailFrom}" id="from"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputlabel value="an" for="to"/>
+                    <apex:inputtextarea cols="120" rows="2" value="{!emailAddressesSerialized}" id="to"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputlabel value="cc" for="cc"/>
+                    <apex:inputtextarea cols="120" rows="2" value="{!ccAddressesSerialized}" id="cc"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputlabel value="Betreff" for="subject"/>
+                    <apex:inputtext size="103" value="{!emailSubject}" id="subject"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputlabel value="Inhalt" for="body"/>
+                    <apex:inputtextarea cols="120" rows="10" value="{!emailBody}" id="body"/>
+                </apex:pageblocksectionitem>
+            </apex:pageblocksection>
+        </apex:pageblock>
+        
+       
+        
+        
+    </apex:form>
+</apex:page>

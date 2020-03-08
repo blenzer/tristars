@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>Reise__c</defaultLandingTab>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Tristars</label>
+    <tabs>Reise__c</tabs>
+    <tabs>Teilnehmer__c</tabs>
+    <tabs>Organisationspunkt__c</tabs>
+    <tabs>OP_Teilnehmer__c</tabs>
+    <tabs>Zahlung__c</tabs>
+</CustomApplication>

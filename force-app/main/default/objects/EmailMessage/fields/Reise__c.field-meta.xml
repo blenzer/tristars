@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reise__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Reise</label>
+    <referenceTo>Reise__c</referenceTo>
+    <relationshipLabel>E-Mail-Nachrichten</relationshipLabel>
+    <relationshipName>E_Mail_Nachrichten</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

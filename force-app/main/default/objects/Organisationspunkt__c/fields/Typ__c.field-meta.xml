@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Typ__c</fullName>
+    <externalId>false</externalId>
+    <label>Typ</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Flug</fullName>
+                <default>false</default>
+                <label>Flug</label>
+            </value>
+            <value>
+                <fullName>Flug individuell</fullName>
+                <default>false</default>
+                <label>Flug individuell</label>
+            </value>
+            <value>
+                <fullName>Unterkunft</fullName>
+                <default>false</default>
+                <label>Unterkunft</label>
+            </value>
+            <value>
+                <fullName>Mietwagen</fullName>
+                <default>false</default>
+                <label>Mietwagen</label>
+            </value>
+            <value>
+                <fullName>Versicherung</fullName>
+                <default>false</default>
+                <label>Versicherung</label>
+            </value>
+            <value>
+                <fullName>Mieträder</fullName>
+                <default>false</default>
+                <label>Mieträder</label>
+            </value>
+            <value>
+                <fullName>Parkplatz</fullName>
+                <default>false</default>
+                <label>Parkplatz</label>
+            </value>
+            <value>
+                <fullName>Anfahrt</fullName>
+                <default>false</default>
+                <label>Anfahrt</label>
+            </value>
+            <value>
+                <fullName>Benzin</fullName>
+                <default>false</default>
+                <label>Benzin</label>
+            </value>
+            <value>
+                <fullName>Ausgaben vor Ort</fullName>
+                <default>false</default>
+                <label>Ausgaben vor Ort</label>
+            </value>
+            <value>
+                <fullName>Anzahlung</fullName>
+                <default>false</default>
+                <label>Anzahlung</label>
+            </value>
+            <value>
+                <fullName>Rückerstattung</fullName>
+                <default>false</default>
+                <label>Rückerstattung</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

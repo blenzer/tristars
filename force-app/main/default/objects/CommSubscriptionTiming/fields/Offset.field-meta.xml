@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Offset</fullName>
+    <inlineHelpText>Die Zeitspanne vor oder nach einem Ereignis oder dem spezifischen Wochentag, in der Sie mit dem Kontaktpunkt kommunizieren sollten. Legen Sie die Zeiteinheit in &quot;Einheit&quot; fest. Wenn Sie beispielsweise für &quot;Einheit&quot; den Wert &quot;Woche&quot; und als Verschiebung &quot;-4&quot; festlegen, kommunizieren Sie vier Wochen vor dem Ereignis mit der Kontaktstelle. Wenn Sie die Verschiebung auf &quot;4&quot; setzen, kommunizieren Sie vier Wochen nach dem Ereignis mit der Kontaktperson. Wenn Sie für die Einheit &quot;Wochentag&quot; und eine Verschiebung von &quot;1&quot; einstellen, kommunizieren Sie mit der Kontaktstelle am Montag. Wenn Sie die Verschiebung auf &quot;7&quot; setzen, kommunizieren Sie mit dem Kontaktpunkt am Sonntag.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

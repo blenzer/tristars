@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Organisationspunkt__c</columns>
+    <columns>Teilnehmer__c</columns>
+    <columns>Buchungsdatum__c</columns>
+    <columns>Individuelle_Istkosten__c</columns>
+    <columns>Individuelle_Plankosten__c</columns>
+    <columns>Anteilige_Istkosten__c</columns>
+    <columns>Anteilige_Plankosten__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Alle</label>
+</ListView>
