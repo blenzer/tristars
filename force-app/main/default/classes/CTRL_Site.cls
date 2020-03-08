@@ -19,17 +19,17 @@ public class CTRL_Site
 
     public pagereference refresh()
     {
-        system.debug('*************sFilter: ' + sFilter);
+        
         return null;
     }
     
     public list<Teilnehmer__c> getTeilnehmer()
     {
-        String sSOQL = 'Select Name, STatus__c from Teilnehmer__c where Reise__c = \'' + oReise.Id + '\'';
+        String sSOQL = 'Select id, Name, STatus__c from Teilnehmer__c where Reise__c = \'' + oReise.Id + '\'';
         sSOQL = sSOQL + ' AND Status__c = \'' + sFilter + '\' ';
-        
-        sSOQL = sSOQL + ' Order By Name';
         system.debug('**************sSOQL: ' + sSOQL);
+        sSOQL = sSOQL + ' Order By Name';
+        
         list<Teilnehmer__c> lTN = database.query(sSOQL);
         return lTN;
     }
